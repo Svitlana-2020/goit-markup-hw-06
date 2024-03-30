@@ -1393,12 +1393,24 @@ background-image: url(../images/marktab2x.jpg),url(../images/tomtab2x.jpg),url(.
     /* min-width: 100%; */
     height: auto;
     background-image: url(../images/banktab1x.jpg),url(../images/qrtab1x.jpg),url(../images/normalcytab1x.jpg),url(../images/cartab1x.jpg),url(../images/displaytab1x.jpg),url(../images/girltab1x.jpg);
+    background-repeat: no-repeat; 
+      background-position: center;
+      background-size: cover;
+
   }
 
   @media screen and (min-resolution: 192dpi) {
     .portfolio-list-image {
   background-image: url(../images/banktab2x.jpg),url(../images/qrtab2x.jpg),url(../images/normalcytab2x.jpg),url(../images/cartab2x.jpg),url(../images/displaytab2x.jpg),url(../images/girltab2x.jpg);
+  background-repeat: no-repeat; 
+      background-position: center;
+      background-size: cover;
 }
+  }
+
+  .portfolio-list-cover {
+    position: relative;
+    overflow: hidden;
   }
 
 /* ------modal-window-tab----- */
