@@ -1207,7 +1207,12 @@ textarea::placeholder {
   .modal-privacy-span {
     display: inline-flex;
   }
-}
+
+  /* -------menu-window-tab------ */
+  .modal-mobile-menu {
+    width: 768px;
+  }
+
 
 @media screen and (min-width: 1158px) {
   .container {
@@ -1216,7 +1221,6 @@ textarea::placeholder {
     padding-right: 15px;
   }
 
-  
   .address-list {
     display: flex;
     gap: 40px;
