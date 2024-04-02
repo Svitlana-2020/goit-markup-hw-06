@@ -44,7 +44,7 @@ button {
 }
 
 .container {
-  width: 100%;
+  max-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
 
@@ -120,7 +120,7 @@ button {
     url(../images/peoplemob1x.jpg);
   /* -----for 320------- */
   /* min-width: 320px; */
-  min-width: 100%;
+  /* min-width: 100%; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -136,7 +136,7 @@ button {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/peoplemob2x.jpg);
-    max-width: 320px;
+    /* max-width: 320px; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -336,7 +336,7 @@ ul {
 
 /* Portfolio */
 .portfolio {
-  padding: 199px 0;
+  padding: 96px 0;
 }
 .portfolio-title {
   font-size: 36px;
@@ -914,7 +914,6 @@ textarea::placeholder {
 .details-item {
   font-weight: 500;
   font-size: 20px;
-
   line-height: 24px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -943,13 +942,15 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
     padding-left: 16px;
     padding-right: 16px;
   }
 
   /* ------header------- */
   .header {
+    padding-top: 112px;
+    padding-bottom: 112px;
   }
 
   .header-container {
@@ -1007,6 +1008,8 @@ textarea::placeholder {
   .address-details {
     display: flex;
     font-style: normal;
+  font-weight: normal;
+
   }
 
   .address-list {
@@ -1046,7 +1049,7 @@ textarea::placeholder {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/peopletab1x.jpg);
-    max-width: 768px;
+    /* max-width: 768px; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1062,7 +1065,7 @@ textarea::placeholder {
           rgba(46, 47, 66, 0.7)
         ),
         url(../images/peopletab2x.jpg);
-      max-width: 768px;
+      /* max-width: 768px; */
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -1152,22 +1155,25 @@ textarea::placeholder {
   /* --------footer------- */
 
   .footer {
-    padding: 96px 164px 96px 108px;
+    padding: 96px 0;
   }
 
   .footer-logo-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 76px 24px;
     justify-content: start;
     align-items: baseline;
+    padding-left: 108px;;
   }
 
   .footer-logo-text {
     text-align: start;
+    margin-bottom: 0;
   }
 
   .footer-links-list {
+    margin-bottom: 0;
   }
 
   .footer-text-social {
@@ -1216,7 +1222,7 @@ textarea::placeholder {
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -1230,6 +1236,7 @@ textarea::placeholder {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    font-weight: normal;
   }
 
   .social-links-list {
@@ -1246,7 +1253,7 @@ textarea::placeholder {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/peopleoffice.jpg);
-    max-width: 1440px;
+    /* max-width: 1440px; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1262,11 +1269,11 @@ textarea::placeholder {
           rgba(46, 47, 66, 0.7)
         ),
         url(../images/peopledesk2x.jpg);
-      max-width: 768px;
+      /* max-width: 1440px; */
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      padding: 56px 0;
+      padding: 188px 0;
     }
   }
   /* ------benefits----- */
@@ -1276,6 +1283,11 @@ textarea::placeholder {
 
   .benefits-list {
     gap: 24px;
+  }
+
+  .benefits-list > :not(:last-child) {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .benefits-item {
@@ -1352,6 +1364,7 @@ textarea::placeholder {
   .footer-logo-links {
     justify-content: space-between;
     flex-wrap: nowrap;
+    gap: unset;
   }
 
   .footer-logo-text {
