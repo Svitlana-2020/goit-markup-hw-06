@@ -949,8 +949,6 @@ textarea::placeholder {
 
   /* ------header------- */
   .header {
-    padding-top: 112px;
-    padding-bottom: 112px;
   }
 
   .header-container {
@@ -1053,7 +1051,7 @@ textarea::placeholder {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 56px 0;
+    padding: 112px 0;
   }
 
   @media screen and (min-resolution: 192dpi) {
@@ -1069,7 +1067,7 @@ textarea::placeholder {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      padding: 56px 0;
+      padding: 112px 0;
     }
   }
 
@@ -1225,7 +1223,7 @@ textarea::placeholder {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
-  }
+      }
 
   .address-list {
     display: flex;
