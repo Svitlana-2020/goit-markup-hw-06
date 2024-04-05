@@ -1086,7 +1086,7 @@ textarea::placeholder {
   .benefits-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
   }
 
   .benefits-item {
@@ -1105,7 +1105,7 @@ textarea::placeholder {
   .team-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 68px 24px;
     padding-left: 108px;
     padding-right: 108px;
   }
@@ -1135,7 +1135,7 @@ textarea::placeholder {
   .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
   }
 
   .portfolio-list-item {
